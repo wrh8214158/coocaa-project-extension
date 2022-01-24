@@ -2,6 +2,7 @@
   "name": "coocaa-project-extension",
   "displayName": "Coocaa Project Extension",
   "description": "A Coocaa Project Right-Func Extension.",
+  "publisher": "wuronghua",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.63.0"

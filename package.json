@@ -1,0 +1,116 @@
+{
+  "name": "coocaa-project-extension",
+  "displayName": "Coocaa Project Extension",
+  "description": "A Coocaa Project Right-Func Extension.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [
+    "onCommand:extension.newProject",
+    "onCommand:extension.startDev",
+    "onCommand:extension.startProd",
+    "onCommand:extension.buildDev",
+    "onCommand:extension.buildProd"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.newProject",
+        "title": "%extension.newProject.title%"
+      },
+      {
+        "command": "extension.startDev",
+        "title": "%extension.startDev.title%"
+      },
+      {
+        "command": "extension.startProd",
+        "title": "%extension.startProd.title%"
+      },
+      {
+        "command": "extension.buildDev",
+        "title": "%extension.buildDev.title%"
+      },
+      {
+        "command": "extension.buildProd",
+        "title": "%extension.buildProd.title%"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.newProject",
+          "group": "1_modification@1",
+          "when": "explorerResourceIsFolder && resourceFilename == page || resourceFilename == views"
+        },
+        {
+          "command": "extension.startDev",
+          "group": "1_modification@2",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "extension.startProd",
+          "group": "1_modification@3",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "extension.buildDev",
+          "group": "1_modification@4",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "extension.buildProd",
+          "group": "1_modification@5",
+          "when": "explorerResourceIsFolder"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "web-start": "npm run dev --workspace=webview",
+    "web-build": "npm run build --workspace=webview"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.63.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "@vscode/test-electron": "^1.6.2",
+    "eslint": "^8.1.0",
+    "glob": "^7.1.7",
+    "mocha": "^9.1.3",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.4",
+    "vscode-nls-i18n": "^0.2.4",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "workspaces": [
+    "webview"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/wrh8214158/coocaa-project-extension/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrh8214158/coocaa-project-extension"
+  },
+  "homepage": "https://github.com/wrh8214158/coocaa-project-extension/blob/main/README.md"
+}

@@ -1,0 +1,21 @@
+{
+  "Primary": {
+    "Title": "1. New Project Folder Name",
+    "FolderName": "1.1 Folder Name",
+    "FolderNamePlaceHolder": "Please enter a project name (recommended to use an underscore separator to separate)",
+    "MetaTitle": "1.2 Meta Title",
+    "MetaTitlePlaceHolder": "Please Enter a Meta title"
+  },
+  "Secondary": {
+    "Title": "2. Modify A Folder OR File"
+  },
+  "Tertiary": {
+    "Title": "3. Project Details File Modification",
+    "ReadmeFile": "3.1 readme.md File Modification",
+    "ReadmePlaceHolder": "Please Enter the content of readme.md"
+  },
+  "Fourlevel": {
+    "Title": "4. Build Project",
+    "CreateProjectBtnName": "Create Project"
+  }
+}

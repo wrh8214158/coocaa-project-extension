@@ -1,0 +1,17 @@
+# production
+out
+dist
+dist-ssr
+*.local
+
+# dependencies
+node_modules
+npm-debug.log
+package-lock.json
+
+# vscode
+.vscode-test/
+*.vsix
+
+# misc
+.DS_Store

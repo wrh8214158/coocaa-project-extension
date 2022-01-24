@@ -1,0 +1,17 @@
+{
+  "extension.newProject.title": "New Local Project",
+  "extension.newProject.message": "",
+  "extension.startDev.title": "Run Local(DEV)",
+  "extension.startDev.message": "",
+  "extension.startProd.title": "Run Local(PROD)",
+  "extension.startProd.message": "",
+  "extension.buildDev.title": "Pack Project(DEV)",
+  "extension.buildDev.message": "",
+  "extension.buildProd.title": "Pack Project(PROD)",
+  "extension.buildProd.message": "",
+  "extension.webviewPanel.title": "New Project",
+  "extension.hasSameFolder.tips": "A folder with the same name already exists, please don't create it again!",
+  "extension.createProjectSuccess.tips": "Project creation is complete!",
+  "extension.packProjectNotFoundManifest.tips": "No manifest.json file found in this folder!",
+  "extension.packProjectNotFolder.tips": "Not a folder, this operation cannot be performed!"
+}

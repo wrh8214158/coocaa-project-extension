@@ -1,0 +1,21 @@
+{
+  "Primary": {
+    "Title": "一、新建项目文件夹名称",
+    "FolderName": "1.1 文件夹名",
+    "FolderNamePlaceHolder": "请输入项目名称（建议使用下划线分隔符来分割）",
+    "MetaTitle": "1.2 路由标题",
+    "MetaTitlePlaceHolder": "请输入路由标题"
+  },
+  "Secondary": {
+    "Title": "二、修改文件夹或文件"
+  },
+  "Tertiary": {
+    "Title": "三、项目详情文件修改",
+    "ReadmeFile": "3.1 readme.md 文件修改",
+    "ReadmePlaceHolder": "请输入 readme.md 的内容"
+  },
+  "Fourlevel": {
+    "Title": "四、生成项目",
+    "CreateProjectBtnName": "创建项目"
+  }
+}

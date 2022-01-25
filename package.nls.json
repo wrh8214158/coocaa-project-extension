@@ -9,6 +9,8 @@
   "extension.buildDev.message": "",
   "extension.buildProd.title": "Pack Project(PROD)",
   "extension.buildProd.message": "",
+  "extension.packageUploadDev.title": "Pack Upload(DEV)",
+  "extension.packageUploadDev.message": "",
   "extension.webviewPanel.title": "New Project",
   "extension.hasSameFolder.tips": "A folder with the same name already exists, please don't create it again!",
   "extension.createProjectSuccess.tips": "Project creation is complete!",

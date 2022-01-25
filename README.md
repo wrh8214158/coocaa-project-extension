@@ -12,12 +12,13 @@ It integrates build project, run project and package project.
 - `Run Local(PROD)`: Run prod env specific projects locally
 - `Pack Project(DEV)`: Package dev env specific projects locally
 - `Pack Project(PROD)`: Package prod env specific projects locally
+- `Pack Upload(DEV)`: One click package upload function
 
 ## Detail
 
 ### menu
 
-![avatar](https://ae01.alicdn.com/kf/Hbd27381c41d24d29a7907a688c5d8e8ap.png)
+![avatar](https://ae01.alicdn.com/kf/Hfa7e8a8fc5cc408182939cea9e2c5be2W.png)
 
 ### webview
 
@@ -35,7 +36,17 @@ Users appreciate release notes as you update your extension.
 
 Initial release of coocaa-project-extension
 
+### 0.0.2
+
+Add one click package upload function
+
 ---
+
+## Build
+
+```bash
+vsce package
+```
 
 ## Following extension guidelines
 

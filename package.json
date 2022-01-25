@@ -3,7 +3,7 @@
   "displayName": "Coocaa Project Extension",
   "description": "A Coocaa Project Right-Func Extension.",
   "publisher": "wuronghua",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -16,7 +16,8 @@
     "onCommand:extension.startDev",
     "onCommand:extension.startProd",
     "onCommand:extension.buildDev",
-    "onCommand:extension.buildProd"
+    "onCommand:extension.buildProd",
+    "onCommand:extension.packageUploadDev"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -40,6 +41,10 @@
       {
         "command": "extension.buildProd",
         "title": "%extension.buildProd.title%"
+      },
+      {
+        "command": "extension.packageUploadDev",
+        "title": "%extension.packageUploadDev.title%"
       }
     ],
     "menus": {
@@ -67,6 +72,11 @@
         {
           "command": "extension.buildProd",
           "group": "1_modification@5",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "extension.packageUploadDev",
+          "group": "1_modification@6",
           "when": "explorerResourceIsFolder"
         }
       ]

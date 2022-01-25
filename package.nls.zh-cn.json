@@ -9,6 +9,8 @@
   "extension.buildDev.message": "",
   "extension.buildProd.title": "项目打包(PROD)",
   "extension.buildProd.message": "",
+  "extension.packageUploadDev.title": "一键打包上传（DEV）",
+  "extension.packageUploadDev.message": "",
   "extension.webviewPanel.title": "新建项目",
   "extension.hasSameFolder.tips": "已经存在同名的文件夹，请勿重复创建！",
   "extension.createProjectSuccess.tips": "项目创建完成！",

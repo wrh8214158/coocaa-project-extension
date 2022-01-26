@@ -60,7 +60,7 @@ const webviewCommand = (context: vscode.ExtensionContext) => {
           }
         )
         .replace(
-          /window.vscodeLangage = '(\w+)'/g,
+          /window.vscodeLangage = '(.*)'/g,
           `window.vscodeLangage = "${vscode.env.language}"`
         );
       return html;

@@ -1,70 +1,63 @@
+<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://ae01.alicdn.com/kf/Hb47a85cc35084db2a6fcb704a5016a5cC.png" alt="coocaa logo"></a></p>
+
+<p align="center">
+  <a href="https://github.com/wrh8214158/coocaa-project-extension/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/vue.svg?sanitize=true" alt="License"></a>
+  <br>
+</p>
+
 # coocaa-project-extension README
 
-## Features
+[英文 README](README.en.md)
 
-This is an extension for coocaa project.
-It integrates build project, run project and package project.
+## 特点
 
-## Function
+这是一个酷开项目 vscode 扩展。
 
-- `New Local Project`: Create a new local project
-- `Run Local(DEV)`: Run dev env specific projects locally
-- `Run Local(PROD)`: Run prod env specific projects locally
-- `Pack Project(DEV)`: Package dev env specific projects locally
-- `Pack Project(PROD)`: Package prod env specific projects locally
-- `Pack Upload(DEV)`: One click package upload function
+集成了 `新建项目` ， `运行项目` ， `打包项目` 和 `一键打包上传` 。
 
-## Detail
+## 功能
 
-### menu
+- `新建本地项目`：创建一个新的本地项目
+- `本地运行(DEV)`：运行一个开发环境的本地特定项目
+- `本地运行(PROD)`：运行一个生产环境的本地特定项目
+- `项目打包(DEV)`：打包一个开发环境的本地特定项目
+- `项目打包(PROD)`：打包一个生产环境的本地特定项目
+- `一键打包上传(DEV)`：打包并上传本地开发环境项目
+
+## 详情
+
+### 菜单
 
 ![avatar](https://ae01.alicdn.com/kf/Hfa7e8a8fc5cc408182939cea9e2c5be2W.png)
 
-### webview
+### 新建页面
 
 ![avatar](https://ae01.alicdn.com/kf/Ha73e243228ae48e9beea5dd5f94d96c6U.png)
 
-## Known Issues
+## 已知问题
 
 TODO
 
-## Release Notes
+## 版本记录
 
-Users appreciate release notes as you update your extension.
+插件版本记录
 
 ### 0.0.1
 
-Initial release of coocaa-project-extension
+coocaa-project-extension 初始版本
 
 ### 0.0.2
 
-Add one click package upload function
+增加一键打包上传功能（dev）
 
 ---
 
-## Build
+## 仓库
 
-```bash
-vsce package
-```
+[coocaa project extension](https://github.com/wrh8214158/coocaa-project-extension)
 
-## Following extension guidelines
+## 许可
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-- Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-- Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-- [Visual Studio Code's Markdown Support](https://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+[MIT](https://opensource.org/licenses/MIT)
 
 **Enjoy!**

@@ -30,9 +30,9 @@ It integrates `build project` , `run project` , `package project` and `Pack Uplo
 
 ![avatar](https://ae01.alicdn.com/kf/Hdfeb07363e4f49deb37ffaf128f7d723K.png)
 
-### webview
+### New Page
 
-![avatar](https://ae01.alicdn.com/kf/H6cf6b92af9844588b348465afa93d6a7Z.png)
+![avatar](https://ae01.alicdn.com/kf/Hd6c1058a16d94b4ca73cf3a165f27e8fS.png)
 
 ## Known Issues
 

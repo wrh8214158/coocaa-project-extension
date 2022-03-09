@@ -32,7 +32,7 @@
 
 ### 新建页面
 
-![avatar](https://ae01.alicdn.com/kf/Ha73e243228ae48e9beea5dd5f94d96c6U.png)
+![avatar](https://ae01.alicdn.com/kf/H63646cbafdee4eb09d4c7703e2544c60P.png)
 
 ## 已知问题
 

@@ -1,4 +1,4 @@
-<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://ae01.alicdn.com/kf/Hb47a85cc35084db2a6fcb704a5016a5cC.png" alt="coocaa logo"></a></p>
+<p align="center"><a href="https://github.com/wrh8214158/coocaa-project-extension" target="_blank" rel="noopener noreferrer"><img width="100" src="https://ae01.alicdn.com/kf/Hb47a85cc35084db2a6fcb704a5016a5cC.png" alt="coocaa logo"></a></p>
 
 <p align="center">
   <a href="https://github.com/wrh8214158/coocaa-project-extension/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/vue.svg?sanitize=true" alt="License"></a>
@@ -49,6 +49,15 @@ Initial release of coocaa-project-extension
 ### 0.0.2
 
 Add one click package upload function (dev)
+
+### 0.0.3
+
+Improve readme in Chinese and English
+Fix Chinese and English environment initial value acquisition
+
+### 0.0.4
+
+Add create mobile project template
 
 ---
 

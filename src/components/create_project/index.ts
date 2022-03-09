@@ -143,8 +143,8 @@ const createModel = (item: any, params: any) => {
               </template>
               
               <script lang="ts">
-              import ${fixName} from './${projectName}';
-              export default ${fixName};
+              import ${firstUpperCaseFixName} from './${projectName}';
+              export default ${firstUpperCaseFixName};
               </script>
               
               <style lang="scss" scoped>
@@ -168,9 +168,12 @@ const createModel = (item: any, params: any) => {
               `.replace(/\s{15}/g, '\n');
     } else if (item.label === 'manifest.json') {
       // 第一级的 manifest.json 文件
-      return `{
+      return (
+        params.frameType === 'tv'
+          ? `{
                 "start_url": "/",
                 "name": "${projectName}",
+                "type": "tv",
                 "short_name": "${projectName}",
                 "icons": [],
                 "display": "standalone",
@@ -184,7 +187,77 @@ const createModel = (item: any, params: any) => {
                   }
                 }
               }
-              `.replace(/\s{15}/g, '\n');
+              `
+          : `{
+                "start_url": "/",
+                "name": "${projectName}",
+                "type": "wx",
+                "loginType": "wx",
+                "get_device_list": false,
+                "vuex_persisted_state": [],
+                "short_name": "${projectName}",
+                "icons": [],
+                "display": "standalone",
+                "background_color": "#1b2740",
+                "theme_color": "#1b2740",
+                "route": {
+                  "path": "/${fixName}",
+                  "name": "${projectName}",
+                  "meta": {
+                    "title": "${params.metaTitle || ''}",
+                    "requireLogin": false
+                  }
+                },
+                "wx_params": {
+                  "scope": "snsapi_userinfo",
+                  "updateAppMessageShareData": {
+                    "title": "",
+                    "desc": "",
+                    "link": "",
+                    "imgUrl": "",
+                    "type": "",
+                    "dataUrl": ""
+                  },
+                  "updateTimelineShareData": {
+                    "title": "",
+                    "link": "",
+                    "imgUrl": ""
+                  },
+                  "development": {
+                    "restful_sign_key": "",
+                    "restful_client_key": "",
+                    "client_id_wx": "",
+                    "client_secret_wx": "",
+                    "wxAppId": "",
+                    "jsApiList": []
+                  },
+                  "production": {
+                    "restful_sign_key": "",
+                    "restful_client_key": "",
+                    "client_id_wx": "",
+                    "client_secret_wx": "",
+                    "wxAppId": "",
+                    "jsApiList": []
+                  }
+                },
+                "cc_params": {
+                  "development": {
+                    "client_id_passport": "",
+                    "client_secret_passport": "",
+                    "login_method": "",
+                    "theme": ""
+                  },
+                  "production": {
+                    "client_id_passport": "",
+                    "client_secret_passport": "",
+                    "login_method": "",
+                    "theme": ""
+                  }
+                },
+                "cc_log": {}
+              }
+              `
+      ).replace(/\s{15}/g, '\n');
     } else {
       return '';
     }

@@ -82,7 +82,7 @@
     <h3 class="title">{{ $t('Tertiary.ReadmeFile') }}</h3>
     <el-input
       v-model="textarea"
-      :rows="5"
+      :rows="8"
       :disabled="!readmeInputDisable['readme.md']"
       type="textarea"
       :placeholder="$t('Tertiary.ReadmePlaceHolder')"
@@ -102,15 +102,26 @@
     </div>
   </div>
   <el-backtop />
-  <el-switch
-    v-model="langage"
-    class="langage-switch"
-    @change="langageChange"
-    active-text="Cn"
-    active-value="zh-cn"
-    inactive-text="En"
-    inactive-value="en"
-  />
+  <div class="function-wrap">
+    <el-switch
+      v-model="frameType"
+      class="function-item frame-type-switch"
+      @change="frameTypeChange"
+      active-text="tv"
+      active-value="tv"
+      inactive-text="mobile"
+      inactive-value="mobile"
+    />
+    <el-switch
+      v-model="langage"
+      class="function-item langage-switch"
+      @change="langageChange"
+      active-text="Cn"
+      active-value="zh-cn"
+      inactive-text="En"
+      inactive-value="en"
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -259,6 +270,8 @@ let btnDisabdled = ref(false);
 
 let langage = ref((window as any)?.vscodeLangage || 'zh-cn');
 
+let frameType = ref('tv');
+
 onMounted(() => {
   projectNameInputRef.value?.focus();
 });
@@ -355,7 +368,16 @@ const labelClick = (node: Node, data: Tree) => {
   }
 };
 
-const textarea = ref(`接口文档: \n需求文档: \n高保文档: \n埋点文档: \n`);
+const textarea = ref(
+  `# 接口文档:
+   # 需求文档:
+   # 高保文档:
+   # 埋点文档:
+   # 人员:
+   # 链接:
+   # 本地运行命令:
+  `.replace(/\s{2}/g, '\n')
+);
 
 // 生成项目
 const generateProject = () => {
@@ -364,7 +386,8 @@ const generateProject = () => {
     projectName: projectName.value,
     metaTitle: metaTitle.value,
     treeData: elTreeRef.value!.getCheckedNodes(false, false),
-    textarea: textarea.value
+    textarea: textarea.value,
+    frameType: frameType.value
   };
   (window as any)?.vscode?.postMessage({
     method: 'createProject',
@@ -377,6 +400,9 @@ const generateProject = () => {
 const { locale } = useI18n();
 const langageChange = (val: string | number | boolean) => {
   locale.value = val === 'zh-cn' ? 'zh-cn' : 'en';
+};
+const frameTypeChange = (val: string | number | boolean) => {
+  locale.value = val === 'tv' ? 'tv' : 'mobile';
 };
 </script>
 
@@ -447,17 +473,22 @@ const langageChange = (val: string | number | boolean) => {
     }
   }
 }
-.langage-switch {
+.function-wrap {
   position: absolute;
   top: 40px;
   right: 40px;
-  ::v-deep(.el-switch__label) {
-    font-weight: bold;
-    span[aria-hidden='false'] {
-      color: #14f497;
+  .function-item {
+    &:nth-child(2n) {
+      margin-left: 20px;
     }
-    span[aria-hidden='true'] {
-      color: #409eff;
+    ::v-deep(.el-switch__label) {
+      font-weight: bold;
+      span[aria-hidden='false'] {
+        color: #14f497;
+      }
+      span[aria-hidden='true'] {
+        color: #409eff;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://ae01.alicdn.com/kf/Hb47a85cc35084db2a6fcb704a5016a5cC.png" alt="coocaa logo"></a></p>
+<p align="center"><a href="https://github.com/wrh8214158/coocaa-project-extension" target="_blank" rel="noopener noreferrer"><img width="100" src="https://ae01.alicdn.com/kf/Hb47a85cc35084db2a6fcb704a5016a5cC.png" alt="coocaa logo"></a></p>
 
 <p align="center">
   <a href="https://github.com/wrh8214158/coocaa-project-extension/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/vue.svg?sanitize=true" alt="License"></a>
@@ -49,6 +49,15 @@ coocaa-project-extension 初始版本
 ### 0.0.2
 
 增加一键打包上传功能（dev）
+
+### 0.0.3
+
+完善 readme 中英文版
+fix 中英文环境初始值获取
+
+### 0.0.4
+
+添加创建移动端项目模板
 
 ---
 

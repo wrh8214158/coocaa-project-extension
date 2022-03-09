@@ -10,3 +10,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Add one click package upload function
 - Add readme.md Chinese English switching and fix English Env variable obtain
 - Add create mobile project template
+- Update readme description

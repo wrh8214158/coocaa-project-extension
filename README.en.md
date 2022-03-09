@@ -59,6 +59,10 @@ Fix Chinese and English environment initial value acquisition
 
 Add create mobile project template
 
+### 0.0.5
+
+Update readme description
+
 ---
 
 ## Repository

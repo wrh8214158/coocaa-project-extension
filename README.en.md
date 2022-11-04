@@ -63,6 +63,10 @@ Add create mobile project template
 
 Update readme description
 
+### 0.0.6
+
+Fixed `vscode.Uri.file` `with({ scheme: 'vscode-resource' })` without permission to read files
+
 ---
 
 ## Repository

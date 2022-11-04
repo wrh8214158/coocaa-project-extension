@@ -49,9 +49,9 @@ const webviewCommand = (context: vscode.ExtensionContext) => {
             if ($2.indexOf('https://') < 0) {
               return (
                 $1 +
-                vscode.Uri.file(path.resolve(dirPath, $2))
-                  .with({ scheme: 'vscode-resource' })
-                  .toString() +
+                (currentPanel as vscode.WebviewPanel).webview.asWebviewUri(
+                  vscode.Uri.file(path.resolve(dirPath, $2))
+                ) +
                 '"'
               );
             } else {

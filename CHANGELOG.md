@@ -11,3 +11,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Add readme.md Chinese English switching and fix English Env variable obtain
 - Add create mobile project template
 - Update readme description
+- fixed `vscode.Uri.file` `.with({ scheme: 'vscode-resource' })` Unable to read path

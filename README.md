@@ -63,6 +63,10 @@ fix 中英文环境初始值获取
 
 更新 readme 说明
 
+### 0.0.6
+
+修复 `vscode.Uri.file` `with({ scheme: 'vscode-resource' })` 无权限读文件
+
 ---
 
 ## 仓库

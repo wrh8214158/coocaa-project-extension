@@ -12,3 +12,5 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Add create mobile project template
 - Update readme description
 - fixed `vscode.Uri.file` `.with({ scheme: 'vscode-resource' })` Unable to read path
+- Update `index.js` layout, delete `manifest.json` file
+- Update `index.js` output format

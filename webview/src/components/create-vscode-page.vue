@@ -30,7 +30,7 @@
         draggable
         :check-on-click-node="false"
         @check-change="checkChange"
-        :default-checked-keys="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+        :default-checked-keys="[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
         :expand-on-click-node="false"
       >
         <template #default="{ node, data }">
@@ -166,7 +166,7 @@ const dataSource = ref<Tree[]>([
     isEdit: false,
     children: [
       {
-        id: 10,
+        id: 9,
         label: 'index.ts',
         type: 'file',
         checked: true,
@@ -198,7 +198,7 @@ const dataSource = ref<Tree[]>([
     isEdit: false,
     children: [
       {
-        id: 11,
+        id: 10,
         label: 'index.ts',
         type: 'file',
         checked: true,
@@ -248,15 +248,6 @@ const dataSource = ref<Tree[]>([
   },
   {
     id: 8,
-    label: 'manifest.json',
-    type: 'file',
-    checked: true,
-    canEdit: false,
-    disabled: true,
-    isEdit: false
-  },
-  {
-    id: 9,
     label: 'readme.md',
     type: 'file',
     checked: true,

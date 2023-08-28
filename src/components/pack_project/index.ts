@@ -14,16 +14,16 @@ const commond = Object.entries(constants.code).map((item) => {
     const fileStat = fs.statSync(filePath);
     if (fileStat.isDirectory()) {
       const fileDir = fs.readdirSync(filePath);
-      const routerFileName = fileDir.find((item) => /^manifest\.json$/g.test(item));
+      const routerFileName = fileDir.find((item) => /^index\.js$/g.test(item));
       if (routerFileName) {
-        // const fullRouterFilePath = path.posix.join(filePath + '/' + routerFileName); // 完整的 manifest 文件路径
+        // const fullRouterFilePath = path.posix.join(filePath + '/' + routerFileName); // 完整的 index 文件路径
         const folderName = path.posix.basename(filePath);
         const terminal = vscode.window.createTerminal({ name: constants.pluginName });
         terminal.show(true);
         // terminal.sendText(`${value.command} -- --path=${fullRouterFilePath}`);
         terminal.sendText(`${value.command} --module=${folderName}`);
       } else {
-        vscode.window.showWarningMessage(localize('extension.packProjectNotFoundManifest.tips'));
+        vscode.window.showWarningMessage(localize('extension.packProjectNotFoundIndex.tips'));
       }
     } else {
       vscode.window.showWarningMessage(localize('extension.packProjectNotFolder.tips'));

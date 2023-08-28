@@ -14,6 +14,6 @@
   "extension.webviewPanel.title": "新建项目",
   "extension.hasSameFolder.tips": "已经存在同名的文件夹，请勿重复创建！",
   "extension.createProjectSuccess.tips": "项目创建完成！",
-  "extension.packProjectNotFoundManifest.tips": "该文件夹下未找到 manifest.json 文件！",
+  "extension.packProjectNotFoundIndex.tips": "该文件夹下未找到 index.js 文件！",
   "extension.packProjectNotFolder.tips": "非文件夹，不能执行该操作！"
 }

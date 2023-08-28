@@ -67,6 +67,14 @@ fix 中英文环境初始值获取
 
 修复 `vscode.Uri.file` `with({ scheme: 'vscode-resource' })` 无权限读文件
 
+### 0.0.7
+
+更新 `index.js` 输出，删除 `manifest.json` 文件的生成
+
+### 0.0.8
+
+更新 `index.js` 格式化输出
+
 ---
 
 ## 仓库

@@ -67,6 +67,14 @@ Update readme description
 
 Fixed `vscode.Uri.file` `with({ scheme: 'vscode-resource' })` without permission to read files
 
+### 0.0.7
+
+Update `index.js` layout, delete `manifest.json` file
+
+### 0.0.8
+
+Update `index.js` output format
+
 ---
 
 ## Repository
